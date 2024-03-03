@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+:root {
+  --color-primary: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-light: hsl(0, 0%, 20%);
+  --color-grey-dark: hsl(0, 0%, 12%);
+  --color-black: hsl(0, 0%, 8%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 23.4375em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  max-width: 90vh;
+  margin: auto;
+  background-color: var(--color-grey-dark);
+  padding: 3rem 6rem;
+  border-radius: 10px;
+  box-shadow: 0 1.5rem 3rem rgba(var(--color-black), 0.8);
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 23.4375em) {
+  .box {
+    max-width: 88%;
+  }
+}
+
+.social__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 3rem;
+  line-height: 1.8;
+}
+.social__photo {
+  border-radius: 50%;
+  height: 10rem;
+  margin-bottom: 2.5rem;
+}
+.social__name {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.social__location {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+}
+.social__text {
+  color: var(--color-white);
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 23.4375em) {
+  .social__text {
+    width: max-content;
+  }
+}
+.social__links {
+  margin-top: 1.2rem;
+}
+
+.btn,
+.btn:visited,
+.btn:active {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-grey-light);
+  display: block;
+  padding: 1.2rem 2.8rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.btn:not(:last-child),
+.btn:visited:not(:last-child),
+.btn:active:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+/*# sourceMappingURL=style.css.map */
